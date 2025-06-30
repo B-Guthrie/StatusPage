@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,500;1,700&display=swap');
+
+:root {
+  --primary-text-color: #044d66;
+  --primary-background-color: #ffffff;
+  --primary-border-color: #044d66;
+  --primary-link-color: #044d66;
+
+  --status-available: #84BD00;
+  --status-informational: #008AD8;
+  --status-degraded: #ff9e1b;
+  --status-unavailable: #c5003e;
+  --status-maintenance: #FFE900;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+a {
+  color: var(--primary-link-color);
+}
+
+.heroH1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #009BDE;
+  margin-bottom: 25px;
+}
+
+.btn-mri {
+  background-color: #b9cf3b;
+  color: #054e66;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.btn-mri:hover {
+  background-color: #044D66;
+  color: #fff;
+}
+
+.servicestatus-component-img {
+  height: 20px;
+  width: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.nav-tabs .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.tab-pane {
+  min-height: 100px;
+}
+
+/* Shared Wrapper to Keep Uniform Width */
+.mri-wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Footer Styling Fixes */
+footer a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .text-center {
+  font-size: 14px;
+}
+
