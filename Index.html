@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MRI Notifications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .heroH1 {
+      font-size: 3rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #009BDE;
+      margin-bottom: 25px;
+    }
+
+    .btn-mri {
+      background-color: #b9cf3b;
+      color: #054e66;
+      border-radius: 30px;
+      font-weight: 700;
+      padding: 10px 20px;
+    }
+
+    .btn-mri:hover {
+      background-color: #044D66;
+      color: #fff;
+    }
+
+    .servicestatus-component-img {
+      height: 20px;
+      width: auto;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .nav-tabs .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    .tab-pane {
+      min-height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="bg-white border-bottom py-3">
+  <div class="container d-flex justify-content-between align-items-center px-4">
+    <!-- Left: Logo -->
+    <div>
+      <img src="https://www.mrisoftware.com/wp-content/themes/mri-moove/assets/images/global/mri-logo.svg"
+           alt="MRI Logo" style="height: 40px;">
+      <div style="font-size: 10px; color: #999;">REAL ESTATE SOFTWARE</div>
+    </div>
+
+    <!-- Right: Subscribe & Avatar -->
+    <div class="d-flex align-items-center gap-3">
+      <a href="#" class="text-primary text-decoration-none">Subscribe</a>
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar"
+           class="rounded-circle" style="height: 36px; width: 36px;">
+    </div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-7 text-center text-md-start">
+      <h1 class="heroH1">MRI Notifications</h1>
+      <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+        <a class="btn btn-lg btn-mri" href="https://www.mrisoftware.com/report-saas-outages/">Report an Outage</a>
+        <a class="btn btn-lg btn-mri" href="https://info.mrisoftware.com/mri-maintenance-window">Maintenance Windows</a>
+      </div>
+    </div>
+    <div class="col-md-5 text-center">
+      <img class="img-fluid w-100" src="https://storage.pardot.com/903661/1678456425erZEzIb2/status.png" alt="System Status Illustration">
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+  $("span.status:contains('All Systems Operational')").text('All Systems Operational');
+});
+</script>
+
+<!-- Event Types Block -->
+<div class="container my-4">
+  <div class="border rounded p-4" style="background-color: #fbfbfb; font-family: 'Segoe UI', sans-serif;">
+    <h5 class="mb-3 text-center" style="color: #044D66; font-weight: 600;">Event Types</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+
+      <span class="badge px-3 py-2" style="background-color: #ff9e1b; color: #fff;">Investigating</span>
+      <span class="badge px-3 py-2" style="background-color: #c5003e; color: #fff;">Identified</span>
+      <span class="badge px-3 py-2" style="background-color: #008AD8; color: #fff;">Monitoring</span>
+      <span class="badge px-3 py-2" style="background-color: #84BD00; color: #fff;">Informational</span>
+      <span class="badge px-3 py-2" style="background-color: #FFE900; color: #000;">Maintenance</span>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Region Tabs Block -->
+<div class="container my-4">
+  <div class="border rounded p-4" style="background-color: #fbfbfb; font-family: 'Segoe UI', sans-serif;">
+    <h5 class="mb-3 text-center" style="color: #044D66; font-weight: 600;">Regional Status</h5>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs nav-scrollable mb-3" id="regionTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="americas-tab" data-bs-toggle="tab"
+                data-bs-target="#tab-7VRxe3nRXEuls4rJu_ew2g-592811" type="button" role="tab"
+                aria-controls="tab-7VRxe3nRXEuls4rJu_ew2g-592811" aria-selected="true">
+          <img class="servicestatus-component-img"
+               src="https://statuscastsaprdeast.blob.core.windows.net/pages/19506/bf2554b647b7455cb6f644e37fdb26a5"
+               alt="Americas">
+          <span class="notranslate">Americas</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="apac-tab" data-bs-toggle="tab"
+                data-bs-target="#tab-7VRxe3nRXEuls4rJu_ew2g-592810" type="button" role="tab"
+                aria-controls="tab-7VRxe3nRXEuls4rJu_ew2g-592810" aria-selected="false">
+          <img class="servicestatus-component-img"
+               src="https://statuscastsaprdeast.blob.core.windows.net/pages/19506/26c138336f074e849276a150aebe1a9f"
+               alt="APAC">
+          <span class="notranslate">APAC</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="emea-tab" data-bs-toggle="tab"
+                data-bs-target="#tab-7VRxe3nRXEuls4rJu_ew2g-592814" type="button" role="tab"
+                aria-controls="tab-7VRxe3nRXEuls4rJu_ew2g-592814" aria-selected="false">
+          <img class="servicestatus-component-img"
+               src="https://statuscastsaprdeast.blob.core.windows.net/pages/19506/43ce507d60144a4481f1ba8ec9997d29"
+               alt="EMEA">
+          <span class="notranslate">EMEA</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="shp-tab" data-bs-toggle="tab"
+                data-bs-target="#tab-7VRxe3nRXEuls4rJu_ew2g-592813" type="button" role="tab"
+                aria-controls="tab-7VRxe3nRXEuls4rJu_ew2g-592813" aria-selected="false">
+          <img class="servicestatus-component-img"
+               src="https://statuscastsaprdeast.blob.core.windows.net/pages/19506/322e0a75ba364b22b6e909af7c6de0af"
+               alt="Self-Hosted">
+          <span class="notranslate">Self-Hosted &amp; Partners</span>
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content border p-4" id="regionTabsContent">
+      <div class="tab-pane fade" id="tab-7VRxe3nRXEuls4rJu_ew2g-592810" role="tabpanel"
+           aria-labelledby="apac-tab">
+        <p>Status content for <strong>APAC</strong>.</p>
+      </div>
+      <div class="tab-pane fade" id="tab-7VRxe3nRXEuls4rJu_ew2g-592814" role="tabpanel"
+           aria-labelledby="emea-tab">
+        <p>Status content for <strong>EMEA</strong>.</p>
+      </div>
+      <div class="tab-pane fade" id="tab-7VRxe3nRXEuls4rJu_ew2g-592813" role="tabpanel"
+           aria-labelledby="shp-tab">
+        <p>Status content for <strong>Self-Hosted &amp; Partners</strong>.</p>
+      </div>
+    </div>
+
+
+
+<div class="tab-content border border-top-0 p-4" id="regionTabsContent">
+    <div class="tab-pane fade show active" id="tab-7VRxe3nRXEuls4rJu_ew2g-592811" role="tabpanel" aria-labelledby="americas-tab">
+      <p>Status content for <strong>Americas</strong>.</p>
+    </div>
+    <div class="tab-pane fade" id="tab-7VRxe3nRXEuls4rJu_ew2g-592810" role="tabpanel" aria-labelledby="apac-tab">
+      <p>Status content for <strong>APAC</strong>.</p>
+    </div>
+    <div class="tab-pane fade" id="tab-7VRxe3nRXEuls4rJu_ew2g-592814" role="tabpanel" aria-labelledby="emea-tab">
+      <p>Status content for <strong>EMEA</strong>.</p>
+    </div>
+    <div class="tab-pane fade" id="tab-7VRxe3nRXEuls4rJu_ew2g-592813" role="tabpanel" aria-labelledby="shp-tab">
+      <p>Status content for <strong>Self-Hosted &amp; Partners</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class=" my-4">
+  <div class=" border rounded p-4 text-center" style="border: 1px solid #cbd6e2; background-color: #fbfbfb;">
+    
+    <div style="width: 100%; border-top: 1px solid #d0d9e4; margin-bottom: 30px;"></div>
+
+    <!-- Logo -->
+    <div class="mb-3">
+      <img src="https://www.mrisoftware.com/wp-content/themes/mri-moove/assets/images/global/mri-logo.svg"
+           alt="MRI Logo" style="height: 40px;">
+      <div style="font-size: 10px; color: #999; letter-spacing: 1px; margin-top: 4px;">REAL ESTATE SOFTWARE</div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="d-flex flex-wrap justify-content-center mb-3" style="gap: 10px;">
+      <a href="#" style="color: #004d6d; text-decoration: none;">Privacy Policy (Americas, Asia, Australasia)</a>
+      <a href="#" style="color: #004d6d; text-decoration: none;">Privacy Shield Policy</a>
+      <a href="#" style="color: #004d6d; text-decoration: none;">Terms of Use</a>
+      <a href="#" style="color: #004d6d; text-decoration: none;">Cookies</a>
+      <a href="#" style="color: #004d6d; text-decoration: none;">Don't Sell My Personal Info</a>
+    </div>
+
+    <!-- Legal -->
+    <div style="font-size: 12px; color: #777;">
+      &copy; 2025 MRI Software LLC – All Rights Reserved.<br />
+      MRI Software LLC is a registered ISO of Wells Fargo Bank, N.A., Concord, CA.
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
